@@ -29,7 +29,7 @@ document.body.onload = startGame()
 function startGame(){
     cards = shuffle(cards)
     for (var i = 0; i < cards.length; i++){
-        deck.innerHTML = ""
+        deck.innerHTML = "";
         [].forEach.call(cards, function(item) {
             deck.appendChild(item)
         })
@@ -133,7 +133,7 @@ function moveCounter(){
 
 var second = 0, minute = 0; hour = 0
 var timer = document.querySelector(".timer")
-var interva
+var interval
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs"
