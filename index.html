@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Anthony's Snack</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kirang+Haerang">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" type="png" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX17743876.jpg"/>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="flexContainer headerBackground">
+        <ul class="nav flexItem flexStart">
+          <li>Snack Time with Anthony</li>
+        </ul>
+
+        <ul class="nav flexContainer flexEnd">
+          <li><a class="nav-links" target="_blank" a href="https://www.google.com/search?safe=strict&tbm=lcl&ei=p3KAW7XMDqWs_QbzzaPYBg&q=Grocery+Stores+in+Salt+Lake+City%2C+UT&oq=Grocery+Stores+in+Salt+Lake+City%2C+UT&gs_l=psy-ab.3..0j0i22i30k1l9.5989.20484.0.21123.36.34.0.2.2.0.166.3675.0j30.30.0....0...1c.1.64.psy-ab..4.32.3679...33i22i29i30k1j0i20i264k1j0i20i263k1j0i20i263i264k1j35i39k1j0i67k1j0i131k1.0.AJSyqfnlpUc#rlfi=hd:;si:;mv:!3m12!1m3!1d30986.153312776147!2d-111.8928707!3d40.73915775!2m3!1f0!2f0!3f0!3m2!1i665!2i492!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10">Get Your Own Snacks!</a></li>
+          <li><a class="nav-links" a href="mailto:anthonymkelley@gmail.com?subject=Snack Chat!">Talk to Anthony!</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Can you match Anthony's snacks?</h1>
+        <h2>Flip the cards below to find the matches of Anthony's snacks.</h2>
+      </header>
+
+      <section class="score-panel">
+        <ul class="stars">
+          <li><i class="fa fa-star"></i></li>
+        	<li><i class="fa fa-star"></i></li>
+      		<li><i class="fa fa-star"></i></li>
+        </ul>
+
+        <span class="moves">0</span> MOVES
+
+        <div class="timer">
+        </div>
+
+        <div class="restart" onClick=startGame()>
+          <i class="fa fa-repeat"></i>
+        </div>
+      </section>
+
+      <ul class="deck" id="card-deck">
+        <!-- 1 -->
+        <li class="card" type="cheese">
+          <i>🧀</i>
+        </li>
+        <!-- 2 -->
+        <li class="card" type="pretzel">
+          <i>🥨</i>
+        </li>
+        <!-- 3 -->
+        <li class="card" type="pizza">
+          <i>🍕</i>
+        </li>
+        <!-- 4 -->
+        <li class="card" type="donut">
+          <i>🍩</i>
+        </li>
+        <!-- 5 -->
+        <li class="card" type="beer">
+          <i>🍻</i>
+        </li>
+        <!-- 6 -->
+        <li class="card" type="broccoli">
+          <i>🥦</i>
+        </li>
+        <!-- 7 -->
+        <li class="card" type="popcorn">
+          <i>🍿</i>
+        </li>
+        <!-- 8 -->
+        <li class="card" type="lollipop">
+          <i>🍭</i>
+        </li>
+        <!-- 9 -->
+        <li class="card" type="cheese">
+          <i>🧀</i>
+        </li>
+        <!-- 10 -->
+        <li class="card" type="pretzel">
+          <i>🥨</i>
+        </li>
+        <!-- 11 -->
+        <li class="card" type="pizza">
+          <i>🍕</i>
+        </li>
+        <!-- 12 -->
+        <li class="card" type="donut">
+          <i>🍩</i>
+        </li>
+        <!-- 13 -->
+        <li class="card" type="beer">
+          <i>🍻</i>
+        </li>
+        <!-- 14 -->
+        <li class="card" type="broccoli">
+          <i>🥦</i>
+        </li>
+        <!-- 15 -->
+        <li class="card" type="popcorn">
+          <i>🍿</i>
+        </li>
+        <!-- 16 -->
+        <li class="card" type="lollipop">
+          <i>🍭</i>
+        </li>
+      </ul>
+
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations 🎉</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    You found all of Anthony's snacks!
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    PLAY AGAIN</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src=./main.js></script>
+
+    <footer class="footer footerText">
+      Despite enjoying playing games with his snacks, please be sure to not interrupt Anthony during snack time.
+    </footer>
+  </body>
+</html>
